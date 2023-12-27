@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-tzbm
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-oizu-tenant/test-app-vrqe/devfile-sample-python-basic-tzbm@sha256:534aa3c6e0970c0b0b96de1cc6374c94aed4958ec3e0ead9ce4eca879f933e8b
+        name: my-python
+        resources: {}
+status: {}
